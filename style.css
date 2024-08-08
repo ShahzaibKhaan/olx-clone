@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(120, 197, 120);
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.box{
+    border-radius: 40px;
+    margin-top: 20px ;
+    height: 450px;
+    width: 400px;
+    background-color: #eee;
+    box-shadow: 0 0 50px ;
+}
+.navbar{
+    
+    border-radius: 40px 40px 0px 0px;
+    padding: 10px;
+    background-color: rgb(121, 192, 111);
+    color: white;
+}
+.biodata{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+}
+.biodata > label {
+    padding: 2px;
+}
+.btn{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.btn button{
+    cursor: pointer;
+    padding: 8px 20px;
+    font-style: italic; 
+    color: white;
+    background-color: rgb(29, 214, 100);
+    font-size: 1.3rem;
+    border: rgb(0, 0, 0);
+    border-style: solid;
+}
+.box1{margin-top: 20px;
+    border-radius: 40px ;
+    height: 500px;
+    width: 400px;
+    background-color: #eee;
+    box-shadow: 0 0 50px black;
+}
+.image{
+    margin: 10px auto 0;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 0 0 5px black ;
+}
+.image > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* @media screen {
+    .container{
+        max-width: 760px;
+    }
+} */
+@media print{
+    body{
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .container{
+        visibility: visible;
+    }
+    
+}
